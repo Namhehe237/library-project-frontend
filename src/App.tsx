@@ -1,18 +1,16 @@
 import React from 'react';
 import './App.css';
+import { Carousel } from './layouts/HomePage/Carousel';
+import { ExploreTopBook } from './layouts/HomePage/ExploreTopBook';
+import { NavBar } from './layouts/navbarAndFooter/NavBar';
 
 function App() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark main-color py-3">
-      <div className='container-fluid'>
-        <span className='navbar-brand'>Nam hehe</span>
-        <button className='navbar-toggler' type='button' data-bs-toggle="collapse" data-bs-target='#navbarNavDropdown'
-        aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle Navigation'>
-          <span className='navbar-toggler-icon'></span>
-        </button>
-        <div className='collapse navbar-collapse' id="navbarNavDropdown"></div>
+      <div>
+        <NavBar/>
+        <ExploreTopBook/>
+        <Carousel/>
       </div>
-    </nav>
   );
 }
 
